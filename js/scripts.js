@@ -1,17 +1,23 @@
 var pingPong = function(n) {
-  var text = ""
-
+  var text = "";
   for (var i = 1; i <= n; i++) {
-    text += i
+    if (i % 3 === 0) {
+      text += "ping";
+    }
+    else {
+      text += i + "<br>";
+    }
   }
- return text;
+  return text;
 }
 
-if (n % 3 === 0) {
-  return  ping
-}
 
-if (n % 5 === 0) {
-  return pong
-}
-if (n % 5 === 0 || n % 5 === 0)
+
+
+// if (i % 5 === 0) {
+//   return pong
+// }
+// if (i % 5 === 0 || i % 5 === 0)
+// else {
+//   return text += i
+// }
