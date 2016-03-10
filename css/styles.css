@@ -5,3 +5,6 @@
 .green  {
   background-color: #80ffaa;
 }
+#result {
+  display: none;
+}

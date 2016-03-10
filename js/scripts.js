@@ -1,29 +1,33 @@
-var pingPong = function(n) {
+var pingPonger = function(n) {
   var text = "";
   for (var i = 1; i <= n; i++) {
     if (i % 15 === 0) {
-      text += "div 15!";
+      text += "<li>div 15!</li><br>";
     }
     else if (i % 5 === 0) {
-      text += "div by 5 ";
+      text += "<li>div by 5!</li><br> ";
     }
     else if (i % 3 === 0) {
-      text += "div by 3 ";
+      text += "<li>div by 3!</li><br> ";
     }
     else {
-      text += i + "<br> ";
+      text += i + "<li><br>";
     }
   }
   return text;
 }
 
+$(document).ready(function() {
+  $("form#pingPong").submit(function(event) {
+    alert("got to beginning of the form submit!");
+    var n = $("input#value").val();
 
+    var result = pingPonger(n)
 
+    $("#resultDisplay").html(result);
 
-// if (i % 5 === 0) {
-//   return pong
-// }
-// if (i % 5 === 0 || i % 5 === 0)
-// else {
-//   return text += i
-// }
+    $("#result").show();
+    alert("got to of results");
+    event.preventDefault();
+  });
+});
