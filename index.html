@@ -23,13 +23,23 @@
         </div>
         <div class="col-xs-6 col-md-8">
           <h2>Lets play!</h2>
-          <h3>Rules:</h3>
+          <h4>Rules:</h3>
           <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
           <ol>
             <li>Numbers divisble by 3 become "ping"</li>
             <li>Numbers divisble by 5 become "pong"</li>
             <li>Numbers divisble by 3 and 5 become "pingpong"</li>
           </ol>
+          <form id="pingPong">
+            <div class="form-group">
+              <label for="n">Enter a number to play:</label>
+              <input id="number" type="number">
+              <button type="button" class="btn btn-secondary">Ping Pong!</button>
+            </div>
+          </form>
+          <div id="result">
+            <p><span class="resultDisplay"></span></p>
+          </div>
         </div>
       </div>
     </div>
