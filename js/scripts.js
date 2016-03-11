@@ -2,16 +2,16 @@ var pingPonger = function(n) {
   var text = "";
   for (var i = 1; i <= n; i++) {
     if (i % 15 === 0) {
-      text += "Ping Pong <br>";
+      text += "<li>ping pong</li>";
     }
     else if (i % 5 === 0) {
-      text += "Pong <br>";
+      text += "<li>pong</li>";
     }
     else if (i % 3 === 0) {
-      text += "Ping<br>";
+      text += "ping<br>";
     }
     else {
-      text += i + "<br>";
+      text += i + "<li>";
     }
   }
   return text;
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $("#resultDisplay").html(result);
 
     $("#result").show();
-    alert("got to of results");
+
     event.preventDefault();
   });
 });
