@@ -6,6 +6,8 @@
 
 ## Description
 
+"http://sreadbrown.github.io/pingpong/"
+
 This a website for my Epicodus section three code review. It is a simple site where a user inputs a number and the site will then count up to that number returning the text "ping", "pong", and "pingpong" for specified values. This website displays the skills I learned in the last section using javascript and Jquery, speficially looping.
 
 ## Setup/Installation Requirements
