@@ -1,9 +1,19 @@
 .jumbotron {
   text-align: center;
-  background-color: #ffdd99;
+  background-color: #FF4242;
+  color: #F0F2EB;
 }
-.green  {
-  background-color: #80ffaa;
+body {
+  background-color: #D4EE5E;
+}
+.container-fluid  {
+  background-color: #F4FAD2;
+  margin: 5%;
+  padding: 2%;
+}
+button  {
+  background-color: #FF4242;
+  color: #F0F2EB;
 }
 #result {
   display: none;
