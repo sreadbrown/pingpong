@@ -1,20 +1,21 @@
 var pingPonger = function(n) {
-  var text = "";
+  var pingArray = [];
   for (var i = 1; i <= n; i++) {
+      pingArray.push("<li>");
     if (i % 15 === 0) {
-      text += "<li>ping pong</li>";
+      pingArray.push("ping pong<br>");
     }
     else if (i % 5 === 0) {
-      text += "<li>pong</li>";
+      pingArray.push("pong<br>");
     }
     else if (i % 3 === 0) {
-      text += "ping<br>";
+      pingArray.push("ping<br>");
     }
     else {
-      text += i + "<li>";
+      pingArray.push(i);
     }
   }
-  return text;
+  return pingArray.join("");
 };
 
 $(document).ready(function() {
