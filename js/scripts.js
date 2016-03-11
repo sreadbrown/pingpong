@@ -31,4 +31,9 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("button#tryAgain").click(function() {
+    $("#result").hide();
+  });
+
 });
